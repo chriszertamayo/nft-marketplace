@@ -20,7 +20,8 @@ export default function Navbar() {
     const { account } = useAccount()
     const { network } = useNetwork()
 
-    console.log(network)
+    console.log(network.data)
+
     return (
         <Disclosure as="nav" className="bg-gray-800">
             {({ open }) => (
